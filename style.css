@@ -1,0 +1,170 @@
+.navbar {
+    background-color: #1B263B;
+    padding: 10px 20px;
+}
+
+.navbar .container-fluid {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.navbar-brand {
+    margin-right: auto;
+    padding: 10px;
+}
+
+.logo {
+    position: fixed;
+    height: 60px;
+    left: 55px;
+    width: 80px;
+
+}
+
+.navbar-brand span {
+    color: #E07A5F;
+    font-weight: bold;
+    height:auto;
+    position: relative;
+    
+}
+
+
+.navbar-nav {
+    margin-left: auto;
+    
+     
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        padding: 15px;
+    }
+}
+
+/* HERO CAROUSEL */
+
+.hero-slide {
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Image Overlay */
+
+.hero-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(12, 27, 48, 0.95),
+        rgba(12, 27, 48, 0.65),
+        rgba(12, 27, 48, 0.1)
+    );
+}
+
+/* Background Images */
+
+.slide-one {
+    background-image: url("images/image\ 1.jpg");
+}
+
+.slide-two {
+    background-image: url("images/image\ 2.jpg");
+}
+
+.slide-three {
+    background-image: url("images/image\ 3.jpg");
+}
+
+/* Hero Content */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.hero-content h5 {
+    color: #E07A5F;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 19px;
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.hero-btn {
+    display: inline-block;
+    background: #E07A5F;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: white;
+    color: #1B263B;
+}
+
+.outline-btn {
+    background: transparent;
+    border: 2px solid white;
+}
+
+/* Carousel Indicators */
+
+.carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    .hero-slide {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content h5 {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-btn {
+        padding: 11px 18px;
+        margin-bottom: 12px;
+    }
+}
